@@ -73,7 +73,7 @@
                       <li><a href="/admin/dashboard">Admin login</a></li>
                     </ul>
    --> 
-   {!! $navbar_right !!}                                  </div>
+   {{ $navbar_right }}                                  </div>
                 </div>
               </nav>
             </div><!-- /example -->
