@@ -26,19 +26,42 @@ class RolesUsersPivotTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('role_user')->delete();
+        
+        $obj_user = $this->user
+        ->where('email', 'bittids@gmail.com')
+        ->first();   
+  // create admin      
         $obj_role = $this->role
         ->where('name', 'admin')
         ->first();
         
-        $obj_user = $this->user
-        ->where('email', 'bittids@gmail.com')
-        ->first();
-        
-        DB::table('role_user')->delete();
         Role_user::create(array(
             'role_id'     => $obj_role->id,
             'user_id' => $obj_user->id
         ));
+        
+ // create client       
+        $obj_role = $this->role
+        ->where('name', 'client')
+        ->first();
+        
+        Role_user::create(array(
+            'role_id'     => $obj_role->id,
+            'user_id' => $obj_user->id
+        ));
+        
+        
+        // create agent (client employee)
+        $obj_role = $this->role
+        ->where('name', 'agent')
+        ->first();
+        
+        Role_user::create(array(
+            'role_id'     => $obj_role->id,
+            'user_id' => $obj_user->id
+        ));
+        
         
     }
     

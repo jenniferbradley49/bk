@@ -2,9 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use Closure;
-use App\Models\Role_user;
 use App\Classes\RoleHelper;
+use App\Models\Role_user;
+use Closure;
 
 class RoleMiddleware
 {
