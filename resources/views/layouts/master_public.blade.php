@@ -13,11 +13,11 @@
 <!-- page title -->
 <title>@yield('title')</title>
  <!-- Latest compiled and minified CSS -->
-<!--
+
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
--->
+<!-- local repository, gotten from CDN, above
          <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
-         
+-->         
 <!-- jquiry UI theme -->    
          <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
               

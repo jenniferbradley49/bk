@@ -9,7 +9,7 @@
                       <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">{{ env('BRAND') }}</a>
-                  </div>
+                  </div><!-- end div navbar header -->
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
@@ -73,10 +73,11 @@
                       <li><a href="/admin/dashboard">Admin login</a></li>
                     </ul>
    --> 
-   {{ $navbar_right }}                                  </div>
-                </div>
+   {!! $navbar_right !!}                                  </div>
+                </div><!-- end div navbar collapse -->
+               <!-- end div contaiuner -->
               </nav>
-            </div><!-- /example -->
+            </div><!-- end div bs-component -->
 
 <!-- 
 <div class="navbar navbar-default navbar-fixed-top">

@@ -179,6 +179,8 @@ return [
         // collective, enables form and HTML service providers
         // added 171227
         Collective\Html\HtmlServiceProvider::class,
+        // enables a view composer for template menu
+        App\Providers\ComposerServiceProvider::class,
         
 
     ],
